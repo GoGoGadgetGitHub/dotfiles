@@ -1,0 +1,10 @@
+* {{
+    main-bg:            {background}B3;
+    main-fg:            {foreground};
+    main-br:            {color4};
+    main-ex:            {color3};
+    select-bg:          {color4};
+    select-fg:          {background};
+    separatorcolor:     transparent;
+    border-color:       transparent;
+}}

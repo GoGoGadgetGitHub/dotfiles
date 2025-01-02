@@ -1,0 +1,85 @@
+@import url("/home/saai/.cache/wal/colors-waybar.css");
+
+* {
+    font-size: 15px;
+    font-family: "MonaspiceNe NFM";
+}
+
+window#waybar {
+    background-color: rgba(0,0,0,0);
+}
+
+#pulseaudio-span,
+#memory-span,
+#cpu-span,
+#disk-span {
+    color: @color15;
+}
+
+#workspaces,
+#clock,
+#pulseaudio,
+#hardware,
+#tray,
+#custom-wlog,
+#custom-updates,
+#custom-apps{
+    background: @background;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+#workspaces button {
+    padding: 0 2px;
+    color: #fdf6e3;
+}
+
+#workspaces button.active {
+    color: @color4;
+}
+
+#workspaces button.urgent {
+    color: @color4;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces button:hover {
+    background: #1a1a1a;
+    border: #1a1a1a;
+    padding: 0 3px;
+}
+
+#custom-wlog,
+#custom-apps {
+    font-size: 20px;
+}
+
+#hardware,
+#pulseaudio,
+#custom-btop,
+#clock,
+#custom-apps,
+#custom-updates,
+#custom-wlog{
+    color: @color4;
+}
+
+#clock,
+#pulseaudio,
+#memory,
+#cpu,
+#disk,
+#custom-btop,
+#tray,
+#window,
+#custom-wlog,
+#custom-updates,
+#custom-apps{
+    padding: 0 10px;
+}

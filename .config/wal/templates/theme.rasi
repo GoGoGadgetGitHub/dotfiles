@@ -1,5 +1,6 @@
 * {{
     main-bg:            {background}B3;
+    main-bg-o:          {background};
     main-fg:            {foreground};
     main-br:            {color4};
     main-ex:            {color3};

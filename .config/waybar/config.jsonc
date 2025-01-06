@@ -10,18 +10,36 @@
     "height": 28,
     "exclusive": true,
     "passthrough": false,
-    "gtk-layer-shell": true,
     "reload_style_on_change": true,
 
 
     // positions generated based on config.ctl //
 
-    "modules-left": ["custom/padd","custom/l_end","cpu","memory","disk","custom/r_end","custom/l_end","clock","custom/r_end","custom/padd"],
+    "modules-left": ["custom/padd","custom/l_end","cpu","memory","disk","custom/r_end","custom/l_end","clock","custom/r_end","custom/l_end","custom/color0","custom/color1","custom/color2","custom/color3","custom/color4","custom/color5","custom/r_end","custom/padd"],
     "modules-center": ["custom/padd","custom/l_end","hyprland/workspaces","hyprland/window","custom/r_end","custom/padd"],
     "modules-right": ["custom/padd","custom/l_end","network","pulseaudio","custom/updates","custom/r_end","custom/l_end","tray","custom/r_end"],
 
 
     // sourced from modules based on config.ctl //
+
+    "custom/color0": {
+        "format": ""
+    },
+    "custom/color1": {
+        "format": ""
+    },
+    "custom/color2": {
+        "format": ""
+    },
+    "custom/color3": {
+        "format": ""
+    },
+    "custom/color4": {
+        "format": ""
+    },
+    "custom/color5": {
+        "format": ""
+    },
 
     "cpu": {
         "interval": 10,

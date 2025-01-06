@@ -2,10 +2,6 @@
 configuration {
     modi:                        "drun,filebrowser,window";
     show-icons:                  true;
-    display-drun:                " ";
-    display-run:                 " ";
-    display-filebrowser:         " ";
-    display-window:              " ";
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
     font:                        "JetBrainsMono Nerd Font 10";
@@ -14,11 +10,10 @@ configuration {
 
 @theme "~/.config/rofi/theme.rasi"
 
-
 // Main //
 window {
-    height:                      12em;
-    width:                       38em;
+    height:                      10em;
+    width:                       30em;
     transparency:                "real";
     fullscreen:                  false;
     enabled:                     true;
@@ -45,7 +40,6 @@ listbox {
     orientation:                 horizontal;
     children:                    [ "listview" ];
     background-color:            transparent;
-    background-image:            url("~/current_wallpaper/current.png", width);
 }
 listview {
     padding:                     0.5em;
@@ -59,7 +53,8 @@ listview {
     fixed-height:                true;
     fixed-columns:               true;
     cursor:                      "default";
-    background-color:            @main-bg;
+    background-color:            rgba(0,0,0,0);
+    backgotund:                  transparent;
     text-color:                  @main-fg;
 }
 
@@ -69,50 +64,25 @@ inputmode {
     padding:                     0em;
     spacing:                     0em;
     orientation:                 horizontal;
-    children:                    [ "inputbar" , "mode-switcher" ];
+    children:                    [ "inputbar" ];
     background-color:            transparent;
 }
 inputbar {
     enabled:                     true;
-    width:                       24em;
+    width:                       28em;
     padding:                     0em;
     spacing:                     0em;
-    padding:                     1.5em 1em 1.5em 2.5em;
+    padding:                     1em 1em 1em 3.5em;
     children:                    [ "entry" ];
     background-color:            transparent;
 }
 entry {
-    vertical-align:              0.5;
     border-radius:               3em;
     enabled:                     true;
-    spacing:                     0em;
     padding:                     1em;
     text-color:                  @main-fg;
-    background-color:            @main-bg;
+    background-color:            @main-bg-o;
 }
-
-
-// Modes //
-mode-switcher {
-    width:                       13em;
-    orientation:                 horizontal;
-    enabled:                     true;
-    padding:                     1.5em 2.5em 1.5em 0em;
-    spacing:                     1em;
-    background-color:            transparent;
-}
-button {
-    cursor:                      pointer;
-    padding:                     0em;
-    border-radius:               3em;
-    background-color:            @main-bg;
-    text-color:                  @main-fg;
-}
-button selected {
-    background-color:            @main-ex;
-    text-color:                  @main-bg;
-}
-
 
 // Elements //
 element {
@@ -127,9 +97,10 @@ element {
 element selected.normal {
     background-color:            @select-bg;
     text-color:                  @select-fg;
+    border-radius:               5px;
 }
 element-icon {
-    size:                        2.5em;
+    size:                        1.4em;
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;
